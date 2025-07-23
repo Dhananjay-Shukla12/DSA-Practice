@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef vector<int> vi; 
+typedef pair<int,int> pi;
+#define PB push_back
+int main(){
+ios::sync_with_stdio(0);
+cin.tie(0);
+ll t;
+cin>>t;
+while(t--){
+    ll n;
+    cin>>n;
+    ll small=INT_MAX;
+    while(n!=0){
+        ll k = n%10;
+        if(small>k)small=k;
+        n=n/10;
+    }
+    cout<<small<<endl;
+}
+return 0;
+
+}
+
