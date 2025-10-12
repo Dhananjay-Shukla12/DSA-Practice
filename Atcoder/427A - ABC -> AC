@@ -1,0 +1,6 @@
+s = str(input())
+
+n = (len(s)+1)//2
+
+s = s[:n-1]+s[n:]
+print(s)
